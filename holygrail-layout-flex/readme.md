@@ -1,21 +1,35 @@
-# Le célèbre HolyGrail layout
+# Les Media Queries et Container Queries : Maîtriser le Responsive Design Moderne
 
-Vous cherchez à créer un design responsif et élégant pour votre site web ? 
+## 📚 Lexique des Termes Essentiels
 
-Le HolyGrail layout est une solution idéale.
+**Media Query**
+Règle CSS permettant d'appliquer des styles en fonction des caractéristiques du *dispositif* (viewport, orientation, résolution).
+**C'est une question posée au navigateur : "Quelle est la taille de l'écran ?"**
 
-Ce modèle de disposition permet d'afficher du contenu dans trois colonnes (entête, pied-de-page et contenu principal) tout en conservant une mise en page compacte et facile à naviguer.
+**Container Query**
+Règle CSS permettant d'appliquer des styles en fonction des dimensions d'un *élément conteneur parent* spécifique, plutôt que de l'écran entier.
+**On demande : "Quelle est la taille de mon conteneur ?"**
 
-[``Histoire de la conception du HolyGrail layout.``]("https://en.wikipedia.org/wiki/Holy_grail_(web_design)")
+**Viewport**  
+Zone visible de la page web dans le navigateur. 
+Sa taille varie selon l'appareil (mobile, tablette, desktop).
 
-## todos
+**Breakpoint**  
+Point de rupture : seuil de largeur où le design change
+(ex : passage de mobile à tablette à 768px).
 
-1. créer un dossier dans votre espace de travail "prefo-html-css" nommé "holygrail-layout-flex"
-2. créer un fichier "index.html" et un fichier "style.css"
-3. étudions la semantic html5 pour choisir les bonnes balises.
-4. Integrer le code html et css.
-5. ouvrir le fichier "index.html" dans un navigateur web
-6. modifier le code css pour personnaliser les couleurs, les polices et les espacements selon vos préférences
+**Container**  
+Élément HTML défini comme contexte de référence pour les container queries.
+*Il devient le point de mesure pour ses enfants.*
 
+**Responsive Design**  
+Approche de conception où l'interface s'adapte automatiquement aux différentes tailles d'écran.
+_Tel de l'eau qui s'adapterai selon différents récipients._
 
->auteur: Benoit Lepage pour CFITECH, 11/**2025**
+[**Progressive Enhancement**](#progressive-enhancement-et-responsive-design--le-lien-intrins%C3%A8que)
+Philosophie de développement web consistant à construire une expérience de base fonctionnelle pour tous les utilisateurs, puis à ajouter progressivement des couches d'amélioration pour les navigateurs et appareils plus capables.
+On part du *minimum viable* et *on enrichit l'expérience*
+
+**Mobile-First**
+Approche de conception commençant par l'expérience mobile (la plus contrainte), puis enrichissant pour les écrans plus grands. 
+C'est une application concrète du **Progressive Enhancement** dans le responsive design.

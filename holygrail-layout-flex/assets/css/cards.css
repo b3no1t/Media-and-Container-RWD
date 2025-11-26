@@ -176,7 +176,8 @@ cqw = Container Query Width (largeur du conteneur en %)
   }
 }
 
-/* fine tunning */
+/** fine tunning */
+
 .aside-1 .adaptive-card {
   background: slategray;
   & img {

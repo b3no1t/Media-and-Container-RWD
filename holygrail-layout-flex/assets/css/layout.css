@@ -2,9 +2,10 @@
 * Holygrail Layout avec Flexbox
 */
 
+/* importation de police de caractere Roboto aka font-family: "Roboto" */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*, *::before, *::after {
+* {
   box-sizing: border-box; /* inclure le padding et la bordure dans la largeur et la hauteur totale des éléments */
   margin: 0;
   padding: 0;
@@ -15,8 +16,7 @@
   flex-flow: row wrap; /*Marre d'écrire flex-direction et flex-wrap, un raccourci le flex-flow*/
   font-weight: bold;
 
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Roboto", sans-serif; /* Roboto police importer via google*/
   font-weight: 300;
   font-style: normal;
 }
@@ -40,7 +40,7 @@
 }
 
 .adaptive-card-container > .adaptive-card {
-  margin-bottom: .5rem;
+  margin-bottom: .5rem; /* espace entre les cards  */
 }
 
 .aside-1 {
@@ -52,11 +52,22 @@
 }
 
 @media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; } 
+  .aside { 
+    flex: 1 0 0;
+    /* equivalent de :*/
+    /*flex-grow: 1;    ✅ L'élément peut grandir */
+    /*flex-shrink: 0;  🚫 L'élément ne peut PAS rétrécir */
+    /*flex-basis: 0;   📏 Taille de base = 0 */
+  } 
 }
 
 @media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
+  .main    { 
+    flex: 3 0px;
+    /*flex-grow: 3;     📈 L'élément peut grandir 3x plus que les autres */
+    /*flex-shrink: 1;   🔄 L'élément peut rétrécir (valeur par défaut) */
+    /*flex-basis: 0px;  📏 Taille de base = 0px */
+  }
   .aside-1 { order: 1; } 
   .main    { order: 2; }
   .aside-2 { order: 3; }
