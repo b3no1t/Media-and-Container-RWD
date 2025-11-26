@@ -3,7 +3,9 @@ STRATÉGIE HYBRIDE COMPLÈTE
 Utiliser les deux pour un résultat optimal
 */
 
-/* 1 Media Query pour le layout global */
+/* 
+* 1 Media Query pour le layout global 
+*/
 
 @media (min-width: 1024px) {
 
@@ -26,7 +28,9 @@ Utiliser les deux pour un résultat optimal
 
 }
 
-/* 2 Container Query pour les composants */
+/* 
+* 2 Container Query pour les composants 
+*/
 
 .card-container {
  /* documentation : https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/container-type */
